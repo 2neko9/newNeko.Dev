@@ -1,0 +1,30 @@
+fname = (input("Enter First Name: "))
+lname = (input("Enter Last Name: "))
+print ("The program will display")
+
+print ("\nWELCOME! "+ fname +" "+ lname)
+
+list = ["Croptops", "Legins", "Blouses", "Shorts", "Pants"]
+list2 = ["T-shirts", "Dresses", "Gowns", "Filipiniana", "Casual Dress"]
+print ("\nOriginal sets: ")
+print (list)
+list.append(list2)
+print ("\nInventory with new sets: ")
+print (list)
+list2.remove("Casual Dress")
+print ("\nUpdated set when the Casual Dress sold: ")
+print (list)
+list.remove("Croptops")
+print ("\nUpdated set when the Croptops sold: ")
+print (list)
+list.remove("Legins")
+print ("\nUpdated set when the Legins sold: ")
+print (list)
+list.insert(6, "Fitted Shirts")
+print ("\nUpdated set when new delivery comes in: ")
+print (list)
+
+print("\nThe Latest Inventory: ")
+print (list)
+print("The Total Number of Inventory is: ")
+print(len(list))

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <style>
+
+body{
+    background-image: url("iscp.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container {                
+    background: rgba( 69, 230, 255, 0.45 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 1.5px );
+    -webkit-backdrop-filter: blur( 1.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 40px;
+    width: 100%;
+    max-width: 600px;
+}
+h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #333;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+.submit-btn{
+    box-shadow:inset 0px 7px 20px 0px #1c1b18;
+	            background-color:#c2e1ea;
+	            border-radius:17px;
+	            display:inline-block;
+	            cursor:pointer;
+	            color:#505739;
+	            font-family:Arial;
+	            font-size:28px;
+	            font-weight:bold;
+	            padding:11px 35px;
+	            text-decoration:none;
+	            text-shadow:17px 9px 2px #ffffff;
+                margin-left: 18%;
+                margin-top: 4%;
+}
+
+	            
+.submit-btn:hover {
+	background-color: rgba(130, 20, 220, 0.274);
+}
+.submit-btn:active {
+	position:relative;
+	top:1px;
+}  
+
+input[type="file"] {
+    padding: 5px;
+}
+
+select,
+textarea {
+    font-family: Arial, sans-serif;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .form-container {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    button.submit-btn {
+        font-size: 16px;
+    }
+}
+
+    </style>
+</head>
+<body>
+	
+    <div class="form-container">
+        <h2>Admission Form</h2>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="username">User Name</label>
+                <input type="text" id="username" name="username" placeholder="Enter a Username" required>
+            </div>
+
+            <div class="form-group">
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="text" id="email" name="email" placeholder="Enter your email address" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="text" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+
+            <div class="form-group">
+                <label for="date-of-birth">Date of Birth</label>
+                <input type="text" id="date-of-birth" name="date-of-birth" placeholder="Enter yout date of birth" required>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Address</label>
+                <textarea id="address" name="address" placeholder="Enter your full address" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="course">Course Applied For</label>
+                <select id="course" name="course" required>
+                    <option value="" disabled selected>Select a course</option>
+                    <option value="engineering">Engineering</option>
+                    <option value="medicine">Medicine</option>
+                    <option value="arts">Arts</option>
+                    <option value="business">Business</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="high-school">High School Graduation Year</label>
+                <input type="text" id="high-school" name="high-school" placeholder="Enter your graduation year" required>
+            </div>
+
+            <div class="form-group">
+                <label for="sex">Address</label>
+                <input type="text" id="sex" name="sex" placeholder="Enter your Sex" required></input>
+            </div>
+
+        
+
+            <button type="submit" class="submit-btn">Submit Application</button>
+        </form>
+    </div>
+        
+
+
+</body>
+</html>
